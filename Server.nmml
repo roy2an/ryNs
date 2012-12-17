@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<app title="Server" main="Server" package="cn.royan.server" version="1.0.0" company="RoYan" />
+	
+	<window width="800" height="500" fps="30" orientation="portrait" resizable="false" if="target_windows" />
+	<window width="800" height="500" fps="30" orientation="portrait" resizable="false" unless="target_windows" />
+ 	
+	<!--<setenv name="no_console" value="1" />-->
+	
+	<set name="BUILD_DIR" value="nme" />
+	
+	<classpath name="src" />
+	<classpath name="../nlib/src" />
+	
+	<haxelib name="nme" />
+	<haxelib name="hxJson2" />
+	<haxelib name="hxunicode" />
+	<haxelib name="pureMVC" />
+	<!--<java path="scripting" />-->
+	
+	<assets path="conf" rename="conf" include="*" />
+	
+	<haxedef name="spod_macro" />
+	
+	<ndll name="std" />
+	<ndll name="regexp" />
+	<ndll name="zlib" />
+	<!--<ndll name="hxvmlua.ndll" />-->
+	<ndll name="nme" />
+	
+</project>

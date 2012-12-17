@@ -1,0 +1,6 @@
+-cp src
+-cp ../nlib/src
+-lib pureMVC
+#-lib actuate
+#-lib aswing
+#-lib hxjson2

@@ -1,0 +1,27 @@
+[
+	{
+	"type":"listenee",
+	"host":"127.0.0.1",
+	"port":6650
+	},
+	{
+	"type":"listener",
+	"host":"127.0.0.1",
+	"port":6651,"max":500,
+	"zones":[
+				{
+				"name":"chat",
+				"max":500,
+				"type":"priority",
+				"rooms":[
+							{"name":"lobby",
+							"max":500,
+							"type":"priority"
+							}
+						]
+				}
+			],
+	"extensions":[
+				]
+	}
+]
